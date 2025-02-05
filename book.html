@@ -56,7 +56,9 @@
     <main>
         <div class="container my-4">
             <h3>Nuovo Libro</h3>
-            <div class="row my-3">
+
+            <!-- Name and surname author -->
+            <div class="row my-4">
                 <div class="col">
                     <label for="formNameInput" class="form-label">Nome Autore</label>
                     <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore"
@@ -69,7 +71,8 @@
                 </div>
             </div>
 
-            <div class="col">
+            <!-- Title book -->
+            <div class="col mb-4">
                 <label for="formTitleInput" class="form-label">Titolo</label>
                 <input type="text" class="form-control" placeholder="Inserisci il titolo del libro"
                 aria-label="Inserisci il titolo del libro">
@@ -77,6 +80,50 @@
                     Titolo versione italiana
                 </div>
             </div>
+
+            <!-- Info book -->
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-4">
+                    <label for="formGenderInput" class="form-label">Genere</label>
+                    <select class="form-select" aria-label="Default select">
+                        <option selected>Scegli il genere</option>
+                        <option value="1">Fantasy</option>
+                        <option value="2">Giallo</option>
+                        <option value="3">Romanzo</option>
+                    </select>
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <label for="formYearInput" class="form-label">Anno di pubblicazione</label>
+                    <input type="number" class="form-control" placeholder="Inserisci l'anno" aria-label="Inserisci l'anno" name="" id="">
+                </div>
+                <div class="col-12 col-lg-4 mb-4">
+                    <label for="formIsbnInput" class="form-label">ISBN#</label>
+                    <input type="number" class="form-control" placeholder="Inserisci il codice ISBN#" aria-label="Inserisci il codice ISBN#" name="" id="">
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Note -->
+            <div class="row mb-4">
+                <div class="col">
+                    <label for="formNoteInput" class="form-label">Note</label>
+                    <textarea class="form-control" id="FormControlTextarea1" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+                </div>
+            </div>
+
+            <!-- Digital availability -->
+            <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Disponibile anche in digitale
+                </label>
+            </div>
+
+            <!-- Add book -->
+            <a href="#">
+                <button type="button" class="btn btn-primary btn">Aggiungi Libro</button>
+            </a>
         </div>
     </main>
 
